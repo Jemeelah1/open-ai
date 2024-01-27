@@ -1,7 +1,10 @@
 # writer.py
 import openai
+from dotenv import load_dotenv
 
-api_key = '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'
+load_dotenv()
+
+api_key = os.getenv("OPENAI_API_KEY")
 openai.api_key = api_key
 
 def write_text(ideas):
