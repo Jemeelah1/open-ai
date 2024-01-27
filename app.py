@@ -2,7 +2,7 @@ import ollama
 
 stream = ollama.chat(
     model='mistral',
-    messages[{'role': 'user', 'content': 'What is Physics'}],
+    messages[{'role': 'user', 'content': 'What is Python Programming'}],
     stream=True,
 )
 
