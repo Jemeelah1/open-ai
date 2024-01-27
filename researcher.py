@@ -1,6 +1,8 @@
 # researcher.py
 import openai
 
+openai.api_key = $OPENAI_API_KEY
+
 def generate_ideas(topic):
     prompt = f"Generate ideas for teaching someone new about {topic}."
     response = openai.Completion.create(
